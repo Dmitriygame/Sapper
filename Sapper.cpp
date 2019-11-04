@@ -32,7 +32,7 @@ void pranyk() {
 };
 void welcome() {
 	cout << "Welcome to game 'Sapper'!\n";
-	cout << "This game is very popular, because I won't describe the rules.\n\n\n";
+	cout << "This game is very popular, so I won't describe the rules.\n\n\n";
 	pranyk();
 }
 void congratulations() {
