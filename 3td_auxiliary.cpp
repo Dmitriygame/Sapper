@@ -1,4 +1,4 @@
-//дебил, [][], а не [,]
+//РґРµР±РёР», [][], Р° РЅРµ [,]
 #include <iostream>
 #include <fstream>
 #include <cstdlib>
@@ -19,11 +19,28 @@ int x, y;
 int main() {
 	system( "color 89" );
 	srand(time(0));
+	
+	char a = char(16);
+	
+	for (int i = 0; i < 5; i++) {
+		for(int j = 0; j < 5; j++) {
+			main_field[i][j] = char(219);
+		}
+	}
+	
+	main_field[2][2] = a;
+	main_field[2][3] = a;
+	main_field[4][2] = a;
 
-	cout << "Enter row and column number\n";
-	cin >> x >> y;
+cout << "   1 2 3 4 5\n\n";
+	for (int i = 0; i < 5; i++) {
+		cout << i+1 << ' ';
+		for(int j = 0; j < 5; j++) {
+			cout << ' ' << main_field[i][j];
+		}
+	cout << endl << endl;
+	}
 
 	return 0;
 }
 ///////////////////////////////////////
-
